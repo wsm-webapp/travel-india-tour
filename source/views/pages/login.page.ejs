@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>travel-india-tour </title>
+    <meta name="Description"
+        content="The job search program for busy high achievers in the next 90 days. We offer mid career job consulting, ATS optimised resume writing and Linkedin profile enhancement and optimisation.">
+    <meta name="Keywords"
+        content="travel-india-tour.in, charmingyatra, travel-india-tour, resume writing, resume builder, job search program, job search, career counselling, career consulting, career opportunities, online resume, online resume writing,">
+    <link rel="canonical" href="https://travel-india-tour.in/" />
+    <meta property="og:url" content="https://travel-india-tour.in/" />
+
+    <%- include('../inc/header-meta.ejs') %>
+</head>
+
+<body>
+    <div class="pages section-login d-flex justify-content-center align-items-center">
+        <div class="section-login-inner container">
+            <div class="section-login-header d-flex justify-content-between align-items-center">
+                <div class="header-logo">
+                    <div class="page-svg">
+                        <a href="index.html" rel="noopener noreferrer">
+                            <img class="svg banner-svg" src="images/logo.svg" title="" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="header-link d-flex justify-content-center align-items-center">
+                    <span class="text-heading">New to travel-india-tour?</span>
+                    <span class="text-link">
+                        <a href="free-sign-up.html" class="btn btn-primary">Register Now</a>
+                    </span>
+                </div>
+            </div>
+            <div class="card-login">
+                <div class="card-login-inner d-flex align-items-center">
+                    <div class="row align-items-start flex-row-reverse justify-content-between">
+                        <div class="col-md-6">
+                            <div class="card-login-content">
+                                <div class="card-login-form">
+                                    <form action="index.html">
+                                        <div class="header h4">Login to Dashboard</div>
+                                        <div class="asasas">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control floating-label" id="userId"
+                                                    placeholder="User Id">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control floating-label" id="password"
+                                                    placeholder="Password">
+                                            </div>
+                                            <div class="form-group with-btn">
+                                                <button class="btn btn-primary hoverable btn-block">Submit</button>
+                                            </div>
+                                            <div class="or-content text-center text-uppercase">Or</div>
+                                            <div class="form-group text-center">Forgot your <a
+                                                    href="forgot-password.html">password?</a></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card-login-header">
+                                <div class="card-login-header-list">
+                                    <ul class="list">
+                                        <% for (var i=1; i <=3; i++ ) { %>
+                                            <li>
+                                                <div class="d-flex justify-content-start align-items-start">
+                                                    <div class="page-svg">
+                                                        <img class="svg banner-svg"
+                                                            src="images/banner/<%if (i ===1) { %>networking-solutions<% } %><%if (i ===2) { %>intelligent-sales<% } %><%if (i ===3) { %>go-to-market-planning<% } %>.svg"
+                                                            title="" loading="lazy" alt="" />
+                                                    </div>
+                                                    <div class="data">
+                                                        <%if (i===1) { %>
+                                                            <div class="heading h5">Networking Solutions</div>
+                                                            <div class="content">We offer businesses a complete array of
+                                                                networking solutions to fit any budget</div>
+                                                            <% } %>
+                                                                <%if (i===2) { %>
+                                                                    <div class="heading h5">Intelligent Sales</div>
+                                                                    <div class="content">Move ahead from traditional way
+                                                                        of cold calling, spam emails to intelligent AI
+                                                                        driven solutions.</div>
+                                                                    <% } %>
+                                                                        <%if (i===3) { %>
+                                                                            <div class="heading h5">Go-To-Market
+                                                                                Planning</div>
+                                                                            <div class="content">Make GTM efficient by
+                                                                                commoditizing simple, self-service
+                                                                                travel-india-tour Tools</div>
+                                                                            <% } %>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <% } %>
+                                    </ul>
+                                </div>
+                                <div class="links">
+                                    <div class="help">Need help? <a href="#" target="_blank"
+                                            rel="noopener noreferrer">Contact Us</a></div>
+                                    <div class="care">For any assistance please call our customer care at <a
+                                            href="tel:+01143666566">011&nbsp;-43666566</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

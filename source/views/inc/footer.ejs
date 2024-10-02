@@ -1,0 +1,191 @@
+<footer class="footer page-footer footer-bg scroll-section" data-section-name="footer">
+  <div class="quick-link">
+    <div class="container">
+      <div class="row">
+
+
+        <div class="col-12 col-md-6 col-lg-4 col-xl-4 footer-widget ftr-links">
+          <h3 class="footer-heading">Important Links</h3>
+          <ul class="list-unstyled">
+            <li><a href="/"> Home</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div><!-- end columns -->
+        <div class="col-12 col-md-6 col-lg-4 col-xl-4 footer-widget ftr-links ftr-pad-left">
+          <h3 class="footer-heading">Case Study</h3>
+          <ul class="list-unstyled">
+            <li><a href="/"> Care Connect Pro</a></li>
+            <li><a href="/"> Leading Insight</a></li>
+            <li><a href="/"> Whistle Clean Australia</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-4 footer-widget ftr-contact">
+          <!-- <div class="contact-list-tel">
+            <h3 class="footer-heading">Contact Us</h3>
+            <ul class="list-icons">
+              <li><a href="tel: +91-9873557545"><span><i class="fa fa-phone fa-rotate-90"></i></span>+91-9873557545</a></li>
+              <li><a href="mailto:info@travel-india-tour.in"><span><i class="fa fa-envelope"></i></span>info@travel-india-tour.in</a></li>
+            </ul>
+          </div> -->
+          <div class="contact-list-social">
+            <h3 class="footer-heading">Connect With Us</h3>
+            <div class="social">
+              <ul class="list-social align-items-center">
+                <li><a href="http://youtube.com" target="_blank" rel="noopener noreferrer"><i
+                      class="fa fa-youtube"></i><span class="text">youtube</span></a></li>
+                <li><a href="https://www.linkedin.com/travel-india-tour" target="_blank" rel="noopener noreferrer"><i
+                      class="fa fa-linkedin"></i><span class="text">linkedin</span></a></li>
+                <li><a href="https://www.facebook.com/travel-india-tour" target="_blank" rel="noopener noreferrer"><i
+                      class="fa fa-facebook"></i><span class="text">facebook</span></a></li>
+                <li><a href="https://www.instagram.com/travel-india-tour" target="_blank" rel="noopener noreferrer"><i
+                      class="fa fa-instagram"></i><span class="text">instagram</span></a></li>
+                <li><a href="https://twitter.com/travel-india-tour" target="_blank" rel="noopener noreferrer"><i
+                      class="fa fa-twitter"></i><span class="text">twitter</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- end columns -->
+      </div>
+    </div>
+  </div>
+  <div class="quick-copyright">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="sec-social">
+          <figure class="subtitle-logo m-0">
+            <a href="index.html"><img src="images/logo.svg" alt="logo" title="logo" loading="lazy"
+                class="img-fluid animateme" /></a>
+          </figure>
+        </div>
+        <div class="footer-copyright text-center">
+          <p>&copy; <%= new Date().getFullYear();%> <a href="mailto:help@travel-india-tour.in"
+                target="_blank">sweetygupta.com</a> All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<%- include('site-modals.ejs') %>
+
+  <script rel="preload" as="script" type="text/javascript">
+
+    $(window).on('load resize', function () {
+      isMobile = {
+        Android: function () {
+          return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function () {
+          return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function () {
+          return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function () {
+          return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function () {
+          return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function () {
+          return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile
+            .Windows());
+        }
+      };
+
+      if (!isMobile.any() && $(window).width() >= 800) {
+        $('.parallax').each(function () {
+          var dataParallaxRatio = ($(this).data("parallax-ratio") === undefined) ? '0.5' : $(this).data(
+            "parallax-ratio");
+          $(this).parallax("50%", dataParallaxRatio);
+        });
+        $('[data-banner-img]').each(function () {
+          $(this).css('background-image', 'url(' + $(this).data("banner-img") + ')');
+          // .css({
+          //   minHeight: $(this).outerWidth() / 2.8,
+          // });;
+        });
+      } else {
+        $('.parallax').addClass("mobile-parallax");
+        $('.parallax').each(function () {
+          var dataParallaxRatio = ($(this).data("parallax-ratio") === undefined) ? '0.5' : $(this).data(
+            "parallax-ratio");
+          $(this).parallax("50%", dataParallaxRatio);
+        });
+        $('[data-banner-img]').each(function () {
+          $(this).css('background-image', 'url(' + $(this).data("banner-img") + ')');
+          // .css({
+          //   minHeight: $(this).outerWidth() / 1.8,
+          // });
+        });
+      }
+
+      if (!isMobile.any() && $(window).width() >= 800) {
+        $('.swiper-parallax').each(function () {
+          var dataParallaxRatio = ($(this).data("swiper-parallax-ratio") === undefined) ? '0.5' : $(this).data(
+            "swiper-parallax-ratio");
+          $(this).parallax("50%", dataParallaxRatio);
+        });
+      } else {
+        $('.swiper-parallax').addClass("mobile-parallax");
+        $('.swiper-parallax').each(function () {
+          var dataParallaxRatio = ($(this).data("swiper-parallax-ratio") === undefined) ? '0.5' : $(this).data(
+            "swiper-parallax-ratio");
+          $(this).parallax("50%", dataParallaxRatio);
+        });
+      }
+
+      $('[data-bg-img]').each(function () {
+        $(this).css('background-image', 'url(' + $(this).data("bg-img") + ')');
+      });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+      /////// Prevent closing from click inside dropdown
+      document.querySelectorAll('.siteNavbar .dropdown-menu').forEach(function (element) {
+        element.addEventListener('click', function (e) {
+          e.stopPropagation();
+        });
+      })
+
+      // make it as accordion for smaller screens
+      if (window.innerWidth < 992) {
+        // close all inner dropdowns when parent is closed
+        document.querySelectorAll('.siteNavbar .navbar .dropdown').forEach(function (everydropdown) {
+          everydropdown.addEventListener('hidden.bs.dropdown', function () {
+            // after dropdown is hidden, then find all submenus
+            this.querySelectorAll('.submenu').forEach(function (everysubmenu) {
+              // hide every submenu as well
+              everysubmenu.style.display = 'none';
+            });
+          })
+        });
+
+        document.querySelectorAll('.siteNavbar .dropdown-menu a').forEach(function (element) {
+          element.addEventListener('click', function (e) {
+
+            let nextEl = this.nextElementSibling;
+            if (nextEl && nextEl.classList.contains('submenu')) {
+              // prevent opening link if link needs to open dropdown
+              e.preventDefault();
+              console.log(nextEl);
+              if (nextEl.style.display == 'block') {
+                nextEl.style.display = 'none';
+              } else {
+                nextEl.style.display = 'block';
+              }
+
+            }
+          });
+        })
+      }
+      //
+
+
+      // end if innerWidth
+    });
+    // DOMContentLoaded  end
+  </script>

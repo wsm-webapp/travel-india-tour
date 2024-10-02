@@ -1,0 +1,80 @@
+&-base {
+  position: relative;
+  min-height: 60vh;
+  padding: $font-size-base * 5 0;
+  z-index: 1;
+}
+
+
+&-services {
+  position: relative;
+  // border: 1px solid $peach-lightn;
+  background-color: rgba($peach-lightn, .5);
+  padding: $font-size-base 0;
+
+  .heading {
+    font-size: 260%;
+    font-weight: 700;
+  }
+
+  .page-bg {
+    width: 80px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 10;
+  }
+
+  .banner-color {
+    width: 30px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    z-index: 10;
+    background-color: rgba($peach-lightn, .5);
+    @include opacity(.6);
+  }
+}
+
+&-intelligent {
+  &-sales {
+    background-color: rgba($peach-lightn, .2);
+    .section-circle {
+      width: 50%;
+      position: absolute;
+      left: 50%;
+      margin-left: -25%;
+      top: 100%;
+      margin-top: -25%;
+      z-index: 3;
+    }
+  }
+}
+
+&-extension-plug-in {
+  background-color: rgba($peach-lightn, .2);
+  .section-circle {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    margin-left: -25%;
+    top: 100%; 
+    margin-top: -25%;
+    z-index: 3;
+  }
+
+  .section-dots {
+    width: 80px;
+    position: absolute;
+    right: -$font-size-base;
+    top: -50px;
+    z-index: 10;
+  }
+}
+
+&-go-to-market {
+  &-planning {
+    // background-color: rgba($peach-lightn, .2);
+  }
+}

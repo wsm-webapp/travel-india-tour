@@ -1,0 +1,278 @@
+//
+// booking card form
+// --------------------------------------------------
+html {
+  scroll-behavior: smooth;
+  touch-action: manipulation;
+}
+
+html,
+body {
+  background-color: $body-bg;
+  //   padding-top: $navbar-brand-height * 2.2;
+}
+
+.inline-text {
+  display: inline !important;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  margin-right: $font-size-base*.5;
+}
+
+a {
+  text-decoration: $link-decoration;
+}
+
+.siteNavbar {
+  z-index: $zindex-fixed;
+
+  // backdrop-filter: blur($font-size-base*.5); 
+  // transition: background-color 300ms;
+
+  padding: 0;
+  margin: 0;
+
+  // background-color: $brand-white;
+
+  .icons-caret {
+    font-size: 110%;
+  }
+
+  .nav-btn {
+    padding: $navbar-brand-height * 0.1 $font-size-base * .5;
+
+    &.light {
+      color: $white;
+
+      &.invite {
+        border-color: $white;
+      }
+    }
+
+    @include media-breakpoint-up(sm) {
+      padding: $font-size-base * .5 0;
+    }
+
+    @include media-breakpoint-up(md) {
+      padding: $font-size-base * .5 $font-size-base * 1.5;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: $font-size-base * .6 $font-size-base * 1.8;
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding: $font-size-base * .6 $font-size-base * 2;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      padding: $font-size-base * .6 $font-size-base * 2;
+    }
+  }
+
+
+  .section-navbar-inner {
+    display: flex;
+    width: 100%;
+    margin-left: 2.7rem;
+
+    .navbar-icons {
+      width: $font-size-base*1.2;
+      margin-right: $font-size-base*.5;
+    }
+  }
+
+  .navbar {
+    border: 0;
+    margin: 0;
+    // padding: $font-size-base * .35 0;
+    padding: 0;
+    border-radius: 0;
+
+    font-weight: 500;
+
+    backdrop-filter: unset;
+    transition: all 0.1s linear;
+
+    .submenu {
+      &.show {
+        max-height: 80vh;
+        overflow: auto;
+      }
+    }
+
+    &-btn {
+      padding: 0;
+
+      .btn-link {
+        padding: $font-size-base*.5 $font-size-base*1.3;
+        margin-top: $font-size-base;
+        margin-left: $font-size-base*2;
+        background-color: $primary;
+        border-radius: $border-radius;
+        color: $white; 
+        font-weight: 700;
+
+      }
+    }
+
+
+    .mobile {
+      &-show {
+        margin-right: $font-size-base * 2;
+
+        @include media-breakpoint-up(sm) {
+          margin-right: $font-size-base;
+        }
+
+        @include media-breakpoint-up(md) {
+          margin-right: $font-size-base;
+        }
+
+        @include media-breakpoint-up(lg) {
+          margin-right: $font-size-base;
+        }
+
+        @include media-breakpoint-up(xl) {
+          margin-right: $font-size-base;
+        }
+      }
+
+      &-none {
+        display: none;
+
+        @include media-breakpoint-up(sm) {
+          display: inline-block;
+        }
+      }
+    }
+
+    &.sitechanged {
+      .light {
+        &.is-img {
+          svg {
+            path {
+              fill: $white;
+            }
+
+            fill: $white;
+          }
+        }
+
+      }
+    }
+
+    &.dark {
+      // background-color: $white;
+      box-shadow: 0 4px 6rem rgb(0 0 0 / 5%);
+    }
+
+    @include media-breakpoint-up(sm) {
+      &.dark {
+        // backdrop-filter: blur(2.5rem);
+        // // background-color: hsla(0, 0%, 100%, .6);
+        // background-color: $white;
+        // box-shadow: 0 4px 6rem rgb(0 0 0 / 5%);
+        // background: hsla(0, 0%, 100%, .85);
+        backdrop-filter: blur(5px);
+      }
+    }
+
+
+
+
+    .navbar-brand {
+
+      // margin-left: $padding-base-vertical * 0.5;
+      img {
+        display: block;
+        height: 100%;
+      }
+
+      &.is-img {
+        padding: $navbar-brand-height * 0.1 0;
+
+        img,
+        svg {
+          display: block;
+          height: $navbar-brand-height * 1.4;
+        }
+
+        @include media-breakpoint-down(sm) {
+          padding: $navbar-brand-height * 0.25 0;
+
+          img,
+          svg {
+            height: $navbar-brand-height*1.5;
+          }
+        }
+
+        @include media-breakpoint-up(md) {
+          padding: $navbar-brand-height * 0.25 0;
+
+          img,
+          svg {
+            height: $navbar-brand-height * 1;
+          }
+        }
+
+        @include media-breakpoint-up(lg) {
+          padding: $navbar-brand-height * 0.25 0;
+
+          img,
+          svg {
+            height: $navbar-brand-height * 1.25;
+          }
+        }
+
+        @include media-breakpoint-up(xl) {
+          padding: $navbar-brand-height * 0.1 0;
+
+          img,
+          svg {
+            height: $navbar-brand-height * 2.4;
+          }
+        }
+
+        @include media-breakpoint-up(xxl) {
+          padding: $navbar-brand-height * 0.25 0;
+
+          img,
+          svg {
+            height: $navbar-brand-height * 2.6;
+          }
+        }
+
+      }
+    }
+
+
+
+    // .dropdown-menu > li > a {
+    // 	padding: 8px 20px;
+
+    // 	&:hover {
+    // 		text-decoration: none;
+    // 		color: $dropdown-link-hover-color;
+    // 		background-color: $dropdown-link-hover-bg;
+    // 	}
+    // }
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+
+  &-track {
+    background-color: lighten($brand-default, 35%);
+    border-radius: 5px;
+  }
+
+  &-thumb {
+    background-color: lighten($brand-default, 15%);
+    border-radius: 5px;
+  }
+}

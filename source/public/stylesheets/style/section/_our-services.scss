@@ -1,0 +1,11 @@
+&-our-services {
+    display: block;
+    padding: $font-size-base * 6 0;
+    padding-bottom: $font-size-base * 2;
+    min-height: 85vh;
+    @include media-breakpoint-up(sm) { min-height: 85vh;  padding: $font-size-base * 12 0;}
+    @include media-breakpoint-up(md) { min-height: 85vh;  padding: $font-size-base * 12 0;}
+    @include media-breakpoint-up(lg) { min-height: 100vh; padding: $font-size-base * 12 0;}
+    @include media-breakpoint-up(xl) { min-height: 100vh; padding: $font-size-base * 10 0;}
+    @include media-breakpoint-up(xxl){ min-height: 100vh; padding: $font-size-base * 12 0; padding-bottom: 0;}
+  }

@@ -1,0 +1,42 @@
+&-blockquote {
+	position: relative;
+	// max-width: 760px;
+	margin: $font-size-base * 1.5 auto;
+	padding: $font-size-base * 3 0;
+	padding-bottom: $font-size-base * 2;
+
+	
+	@include media-breakpoint-down(sm) {
+		margin: $font-size-base auto;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	&:after {
+		content: '';
+		display: block;
+		height: 1px;
+		position: absolute;
+		top: $font-size-base * 2;
+		left: $font-size-base * 8;
+		right: 0;
+		background-color: $gray-300;
+	}
+	&:before {
+		content: open-quote;
+		font-family: $font-awesome-free;
+		font-weight: 400;
+		display: block;
+		width: $font-size-base * 4;
+		height: $font-size-base * 4;
+		border-radius: 40px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: $primary;
+		letter-spacing: -5px;
+		font-size: $font-size-base * 6;
+		line-height: $font-size-base * 6.3;
+		text-align: center;
+		box-shadow: 0 1px 7px 2px rgba($gray-500, 0.3);
+	}
+}

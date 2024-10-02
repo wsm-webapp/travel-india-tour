@@ -1,0 +1,17 @@
+&-headings {
+  display: block;
+  position: relative;
+
+  &-outer {
+    margin-bottom: $font-size-base*2;
+  }
+
+  .heading {
+    margin: 0;
+  }
+
+  .sub-heading {
+    margin: 0;
+    font-weight: 500;
+  }
+}

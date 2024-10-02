@@ -1,0 +1,63 @@
+&-get-free-quote {
+  min-height: 40vh;
+  position: relative;
+  z-index: 3;
+  // margin: $font-size-base * 2 auto;
+  padding: $font-size-base * 2 0;
+
+  .page-bg {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 52%;
+    background-color: lighten($primary, 45%);
+    @include transition(all 0.5s ease);
+    z-index: -2;
+    overflow: hidden;
+  }
+
+  .heading {
+    font-size: $font-size-base * 2.1;
+    // line-height: 1.1;
+    // font-weight: 600;
+    margin-bottom: $font-size-base * 1.5;
+
+
+    .text {
+      display: inline-block;
+      background-image: url("../images/line.svg");
+      background-position: 50% 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      -webkit-transition-property: all;
+      transition-property: all;
+    }
+
+    span,
+    .span {
+      font-weight: 700;
+    }
+  }
+
+  .card-content {
+    font-size: $font-size-base * 1.2;
+    // line-height: 1.2;
+    // font-weight: 300;
+    margin-top: $font-size-base * 2;
+    &-text{
+      border-radius: $border-radius;
+      padding: $font-size-base * 2;
+      
+    }
+  }
+
+  // @include media-breakpoint-up(sm) { min-height: 40vh;   padding: $font-size-base * 3 0; .page-bg { width: 45%;background-color: lighten($primary, 40%);}}
+  // @include media-breakpoint-up(md) { min-height: 40vh;   padding: $font-size-base * 3 0; .page-bg { width: 45%;background-color: lighten($primary, 40%);}}
+  // @include media-breakpoint-up(lg) { min-height: 40vh;  padding: $font-size-base * 3 0; .page-bg { width: 45%;background-color: lighten($primary, 40%);}}
+  // @include media-breakpoint-up(xl) { min-height: 40vh;  padding: $font-size-base * 3 0; .page-bg { width: 45%;background-color: lighten($primary, 40%);}}
+  // @include media-breakpoint-up(xxl){ min-height: 40vh;  padding: $font-size-base * 3 0; .page-bg { width: 45%;background-color: lighten($primary, 40%);}}
+
+}

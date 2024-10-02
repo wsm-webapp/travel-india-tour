@@ -1,0 +1,502 @@
+.benefits-card {
+  .heading {
+    font-size: $font-size-base * 3;
+    line-height: 1;
+    
+    margin-bottom: $font-size-base * 3;
+    span {
+      font-weight: 700;
+      // color: $indigo-800;
+    }
+  }
+  .card-content {
+    font-size: $font-size-base * 1.8;
+    // line-height: 1.3;
+    // font-weight: 300;
+    margin-top: $font-size-base * 2;
+  }
+  
+  @include media-breakpoint-up(sm) { .heading{font-size: $font-size-base * 4; margin-bottom:$font-size-base * 2;} .card-content {font-size: $font-size-base * 2.3;margin-top: 0;} }
+  @include media-breakpoint-up(md) {  }
+  @include media-breakpoint-up(lg) {  }
+  @include media-breakpoint-up(xl) {  }
+
+}
+
+.about-us-card {
+  .heading {
+    font-size: $font-size-base * 4;
+    line-height: 1;
+    
+    span {
+      font-weight: 700;
+    }
+  }
+  .card-content {
+    font-size: $font-size-base * 1.6;
+    
+    // line-height: 1.3+5;``` `
+    // font-weight: 300;
+  }
+}
+
+.journey-with-card {
+  // &:before {
+  //   content: '';
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: 0;
+  //   top: 0;
+  //   width: 5%;
+  //   background-color: lighten($gray-900, 44%);
+  //   @include transition(all 0.5s ease);
+  //   z-index: -2;
+  // }
+
+  .heading {
+    font-size: $font-size-base * 2.5;
+    line-height: 1;
+    
+    span {
+      font-weight: 700;
+    }
+    // br{display: none;} 
+  }
+  .sub-heading {margin-top: $font-size-base * 2; font-size: $font-size-base * 1.2;}
+  .card-content {
+    font-size: $font-size-base * 1.35; 
+    
+    margin-top: $font-size-base * 2;
+    // line-height: 1.3+5;``` `
+    // font-weight: 300;
+    .inner {
+      font-size: $font-size-base * 0.9;
+    }
+    .header {
+      margin-bottom: $font-size-base * 2;
+      font-weight: 600;
+    }
+    &.small-text {
+      font-size: $font-size-base * .9; 
+    }
+  }
+@include media-breakpoint-up(sm) { .heading {font-size: $font-size-base * 2;}   }
+@include media-breakpoint-up(md) { .heading {font-size: $font-size-base * 3;}  .card-content {margin-top: $font-size-base * 3; font-size: $font-size-base * 1.1;} .sub-heading {margin-top: $font-size-base;}}
+@include media-breakpoint-up(lg) { .heading {font-size: $font-size-base * 3;} .card-content {font-size: $font-size-base * 1.3; margin:0;}  }
+@include media-breakpoint-up(xl) { .heading {font-size: $font-size-base * 3;} .card-content {font-size: $font-size-base * 1.8; margin:0;&.small-text {font-size: $font-size-base * 1.2; }}}
+@include media-breakpoint-up(xxl) { .heading {font-size: $font-size-base * 3.2;}  }
+}
+
+.newsletter-card {
+  // &:before {
+  //   content: '';
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: 0;
+  //   top: 0;
+  //   width: 5%;
+  //   background-color: lighten($gray-900, 44%);
+  //   @include transition(all 0.5s ease);
+  //   z-index: -2;
+  // }
+
+  .list-ol{
+    margin: 0;
+    padding: 0;
+    padding-left: $font-size-base ;
+    li{
+      margin:$font-size-base auto;
+      text-align: justify;
+    }
+  }
+  .accordion-button{ 
+    
+    font-weight: 500;
+    .text {margin-right: $font-size-base*2;}
+    @include media-breakpoint-up(sm) {font-weight: 600; .text {margin-right: $font-size-base*2;}}
+    @include media-breakpoint-up(md) {font-weight: 600; .text {margin-right: $font-size-base*2;}}
+    @include media-breakpoint-up(lg) {font-weight: 600; .text {margin-right: $font-size-base*2;}}
+  }
+
+  .newsletter-img {
+    display: none;
+    img{
+      display: block;
+      width: 100%;
+    }
+    svg{
+      width:100%;
+      height: 100%;
+    }
+    @include media-breakpoint-up(sm) {display: none;}
+    @include media-breakpoint-up(md) {display: none;}
+    @include media-breakpoint-up(lg) {display: block;}
+  }
+
+  .heading {
+    margin-bottom: $font-size-base;
+    font-size: $font-size-base * 1.4;
+    line-height: 1;
+    
+    span {
+      font-weight: 700;
+    }
+    @include media-breakpoint-up(sm) {font-size: $font-size-base * 2; margin-bottom: $font-size-base * 2;}
+    @include media-breakpoint-up(md) {font-size: $font-size-base * 2; margin-bottom: $font-size-base * 2;}
+    @include media-breakpoint-up(lg) {font-size: $font-size-base * 2; margin-bottom: $font-size-base * 2;}
+  }
+  .sub-heading {
+    margin-top: $font-size-base * 2;
+  }
+  .newsletter-form{
+    margin: $font-size-base * 2 auto;
+  }
+  .privacy {
+    
+    font-size: $font-size-base*.9;
+  }
+  .card-content {
+    font-size: $font-size-base * 1.35;
+    
+    // line-height: 1.3+5;``` `
+    // font-weight: 300;
+    .inner {
+      font-size: $font-size-base * 0.9;
+    }
+    .header {
+      margin-bottom: $font-size-base * 2;
+      font-weight: 600;
+      font-size: $font-size-base * 1.2;
+    }
+  }
+}
+
+.introductory-offer {
+
+  .heading {
+    margin: 0;
+    padding: 0;
+    font-size: $font-size-base * 1.6;
+    line-height: 1;
+    margin-bottom: $font-size-base * .9;
+    margin-top: $font-size-base * 2;
+    .header {
+      font-size: 85%;
+      font-weight: 600;
+      margin-bottom: $font-size-base * 2.5;
+    }
+    @include media-breakpoint-up(xl){ margin-top: 0; margin-bottom: $font-size-base * 1.2; .header {font-size: 110%;} }
+    @include media-breakpoint-up(xxl){ margin-top: 0; margin-bottom: $font-size-base * 1.2; .header {font-size: 110%;} }
+  }
+
+  .offer-price {
+    .fa{margin-right: $font-size-base * .2;}
+    .save {
+      font-size: $font-size-base * 1.3;
+      text-transform: uppercase;
+      color: $primary;
+    }
+    .main {
+      font-size: $font-size-base * 3;
+      margin-right: $font-size-base * 1;
+      font-weight: 700;
+    }
+    .dicount {
+      font-size: $font-size-base * 1.7;
+      text-decoration: line-through;
+      @include opacity(.4);
+    }
+  }
+
+  .sub-heading {
+    margin-top: $font-size-base * 2;
+  }
+
+  .section {
+    padding: 0;
+    border-radius: $border-radius-lg * 4;
+    border: 2px solid $border-color;
+    padding:$font-size-base*1.5 $font-size-base*2;
+
+    .cards {
+      border-left: 0;
+      border-top: 2px solid $border-color;
+    }
+    @include media-breakpoint-up(xl){ padding: $font-size-base * 4 $font-size-base * 4; border-radius: $border-radius-lg * 4; border: 3px solid $border-color; .cards {border-left: 2px solid $border-color; border-top: 0;}}
+    @include media-breakpoint-up(xxl){ padding: $font-size-base * 4 $font-size-base * 4; border-radius: $border-radius-lg * 4; border: 3px solid $border-color; .cards {border-left: 2px solid $border-color; border-top: 0;}}
+  }
+  
+  .sec-head {
+    margin: 0;
+    padding: 0;
+    li{
+      position: relative;
+      display: block;
+      margin: $font-size-base * 1.2 auto;
+      list-style: none;
+      padding-left: $font-size-base * 2;
+      &:before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        width: $font-size-base* .6;
+        height: $font-size-base* .6;
+        background-color: $primary;
+        top:$font-size-base*.6;
+      }
+    }
+    
+  }
+
+  .span-text {
+    display: inline-block;
+    .fa {
+      display: inline;
+      margin-right: $font-size-base * .2;
+    }
+  }
+  
+  .card-content {
+    font-size: $font-size-base ;
+    
+    // line-height: 1.3+5;``` `
+    // font-weight: 300;
+    .inner {
+      font-size: $font-size-base * 0.9;
+    }
+    .header {
+      margin-bottom: $font-size-base * 2;
+      font-weight: 600;
+    }
+
+    @include media-breakpoint-up(xl)  {font-size: $font-size-base * 1.35;}
+    @include media-breakpoint-up(xxl) {font-size: $font-size-base * 1.35;}
+  }
+}
+
+
+.artical-list { 
+  display: block;
+  margin: $font-size-base  auto;
+
+  .figure {
+    margin-right: $font-size-base *1.3;
+    margin-top: $font-size-base*.3;
+  }
+
+	.img { 
+    width: $font-size-base*1.5;
+    @include media-breakpoint-up(sm) { width: 40px;}
+		@include media-breakpoint-up(md) { width: 40px;}
+		@include media-breakpoint-up(lg) { width: 40px;}
+		@include media-breakpoint-up(xl) { width: 40px;}
+		.svg { 
+      display: block;
+      width: 100%;
+      height: auto;
+		}
+
+	}
+
+  
+
+	.head { 
+    font-size: $font-size-base * 1.2;
+    
+    font-weight: 500;
+    margin-bottom: $font-size-base*.5;
+	}
+
+	.sub-head { 
+    font-size: $font-size-base ;
+	}
+
+@include media-breakpoint-up(sm) { margin: $font-size-base *1.5  auto; .figure {margin-right: $font-size-base * 2; margin-top: $font-size-base*.3;} .img { width: 60px;}}
+@include media-breakpoint-up(md) { .figure {margin-right: $font-size-base * 2; } .img { width: 32px;}}
+@include media-breakpoint-up(lg) { .figure {margin-right: $font-size-base * 2; } .img { width: 32px;}}
+@include media-breakpoint-up(xl) { .figure {margin-right: $font-size-base * 2; } .img { width: 32px;}}
+@include media-breakpoint-up(xxl) {.figure {margin-right: $font-size-base * 2; } .img { width: 32px;}}
+
+}
+
+.get-started-link {
+  margin-top: $font-size-base * 2; 
+
+  .journey {
+    &-link {
+      font-size: $font-size-base * 0.8;
+    }
+    &-href {
+      display: inline-block;
+      @include transition(all 0.5s ease);
+
+      .link {
+        position: absolute;
+        display: block;
+        @include transition(all 0.5s ease);
+        left: 108%;
+        width: $font-size-base * 2;
+        // height: $font-size-base;
+        top: 50%;
+        margin-top: -$font-size-base * .5;
+        .svg {
+          // width: 60px;
+          // height: 40px;
+          width:100%;
+          display: block;
+          // transform: scale(0.5);
+          
+        }
+      }
+      a.page-href,
+      .page-href {
+        border: none;
+        padding: 0;
+        outline: none;
+        background-color: transparent;
+        position: relative;
+        text-decoration: none;
+        color: $primary;
+        display: block;
+        font-weight: 800;
+        font-size: 115%;
+        color: $primary;
+        @include transition(all 0.5s ease);
+        &.disabled{
+          @include opacity(.5);
+        }
+        &:hover {
+          color: $secondary;
+          .link {
+            left: 120%;
+          }
+          .svg,svg{
+            path {
+              fill: $secondary;
+            }
+          }
+        }
+      }
+      position: relative;
+      vertical-align: middle;
+    }
+  }
+@include media-breakpoint-up(sm) { margin-top: $font-size-base * 3; }
+@include media-breakpoint-up(md) { margin-top: $font-size-base * 4; }
+@include media-breakpoint-up(lg) { margin-top: $font-size-base * 3; }
+@include media-breakpoint-up(xl) { margin-top: $font-size-base * 1.5; }
+}
+
+
+.get-contacted {
+  margin-top: 0;
+  // text-align: right;
+
+  .journey {
+    &-link {
+      font-size: $font-size-base * 0.8;
+    }
+    &-href {
+      display: inline-block;
+      @include transition(all 0.5s ease);
+
+      .link {
+        position: absolute;
+        display: block;
+        @include transition(all 0.5s ease);
+        left: 100%;
+        width: $font-size-base * 3;
+        // width: $font-size-base * 5;
+        // height: $font-size-base;
+        top: 50%;
+        margin-top: -$font-size-base * .75;
+        .svg {
+          // width: 60px;
+          // height: 40px;
+          display: block;
+          transform: scale(0.5);
+        }
+      }
+      a.page-href,
+      .page-href {
+        border: none;
+        padding: 0;
+        outline: none;
+        background-color: transparent;
+        position: relative;
+        text-decoration: none;
+        display: block;
+        font-weight: 500;
+        color: $primary;
+        @include transition(all 0.5s ease);
+        color: $primary;
+
+        &:hover {
+          @include transition(all 0.5s ease);
+          color: $blue-600;
+          text-decoration: underline;
+          .link {
+            left: 120%;
+            width: $font-size-base * 3;
+          }
+        }
+      }
+      position: relative;
+      vertical-align: middle;
+    }
+  }
+@include media-breakpoint-up(sm) { margin-top: $font-size-base * 3; font-size: $font-size-base *1.2; }
+@include media-breakpoint-up(md) { margin-top: $font-size-base * 4; font-size: $font-size-base *1.2; }
+@include media-breakpoint-up(lg) { margin-top: $font-size-base *.2; font-size: $font-size-base *1.2; }
+@include media-breakpoint-up(xl) { margin-top: $font-size-base *1.2; font-size: $font-size-base *1.2; }
+}
+
+.page-terms {
+  min-height: 100vh;
+  overflow: hidden;
+  padding: $font-size-base * 8 0;
+  padding-bottom: $font-size-base;
+  .terms {
+      &-text {
+          .header {
+              font-size: $font-size-base * 2;
+              line-height: 1;
+              
+
+              span {
+                  font-weight: 700;
+              }
+
+
+          }
+
+          margin-bottom:$font-size-base * 2;
+      }
+
+      &-content {
+        margin-bottom: $font-size-base *4;
+          ol,
+          ul {
+              margin: 0;
+              padding: 0;
+              padding-left: $font-size-base ;
+              margin-bottom: $font-size-base * 3 0;
+
+              li {
+                  padding-left: $font-size-base ;
+
+                  h3,
+                  h5 {
+                      margin-bottom: $font-size-base ;
+                      margin-top: $font-size-base *4;
+                  }
+              }
+
+              
+          }
+      }
+  }
+
+
+}

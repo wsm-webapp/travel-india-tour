@@ -1,0 +1,19 @@
+.card {
+    @import 'cards/headings'; 
+    @import 'cards/avatar';
+    @import 'cards/banner-card';
+    @import 'cards/slider';
+    @import 'cards/slider-base';
+    @import 'cards/success-stories';
+    @import 'cards/blockquote';
+    @import 'cards/office-address';
+    @import 'cards/newsletter';
+    @import 'cards/base';
+    @import 'cards/login';
+    @import 'cards/blog-card';
+    @import 'cards/icon-list-card';
+    @import 'cards/interactive-dashboard';
+    @import 'cards/search';
+    @import 'cards/why-us';
+    @import 'cards/pricing';
+}

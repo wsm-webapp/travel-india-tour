@@ -1,0 +1,9 @@
+&-blog {
+  position: relative;
+  // min-height: 60vh;
+  padding: $font-size-base * 2 0;
+  z-index: 1;
+  &-detail{
+    padding: $font-size-base * 7 0;
+  }
+}

@@ -1,0 +1,66 @@
+<div class="table-pagination with-bg">
+  <div class="table-responsive">
+    <table class="table  table-symbols">
+      <thead>
+        <tr>
+          <th width="10%">Reference&nbsp;Number</th>
+          <th width="30%">Client&nbsp;Name</th>
+          <th>PAN</th>
+          <th>Creation&nbsp;Time&nbsp;&&nbsp;Date </th>
+          <th width="10%">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (var i =1; i <=5;  i++ ) { %>
+
+        <% if (i == 3 ) { %>
+        <tr class="table-active">
+          <% }  else { %>
+        <tr>
+          <% } %>
+
+          <td>GCML<%= Math.floor(1000 + Math.random() * 9000) %></td>
+          <td>Himanshu Joshi </td>
+          <td>ABCDE<%= Math.floor(1000 + Math.random() * 9000) %>A</td>
+          <td>2020-05-15 T21:35:34</td>
+          <td>
+            <% if (i == 1 ) { %>
+            <a data-bs-toggle="modal" data-bs-target="#enquireNow_popup" href="#"><span class="badge bg-danger">Rejected
+              </span></a>
+            <% }  else if (i == 2 ) { %>
+            <a class="" href="account-code.html"><span class="badge bg-warning text-dark bold">Open</span></a>
+            <% }  else if (i == 3 ) { %>
+            <span class="badge bg-secondary bold">Activated</span>
+            <% }  else { %>
+            <a data-bs-toggle="modal" data-bs-target="#fSignDone" href="#"><span class="badge bg-success bold">F-Sign Done</span></a>
+
+            <% } %>
+          </td>
+        </tr>
+        <% } %>
+        <!-- <tr>
+        <td>
+          <a href="dashboard.html"><span>GCML1234</span></a>
+        </td>
+        <td>Himanshu Joshi</td>
+        <td>ABCDE1234A</td>
+        <td>2020-05-15 T21:35:34</td>
+        <td width="180px">
+          <span class="text-info">Under Review</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="dashboard.html"><span>GCML1234</span></a>
+        </td>
+        <td>Himanshu Joshi</td>
+        <td>ABCDE1234A</td>
+        <td>2020-05-15 T21:35:34</td>
+        <td width="180px">
+          <span class="">Rejected</span>
+        </td>
+      </tr> -->
+      </tbody>
+    </table>
+  </div>
+</div>

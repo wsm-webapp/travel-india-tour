@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.042 32.042">
+  <g id="Group_4875" data-name="Group 4875" transform="translate(-2.5 -2.5)">
+    <path id="Path_15087" data-name="Path 15087" d="M5.063,5.2A.145.145,0,0,1,5.2,5.063h8.668V2.5H5.2A2.706,2.706,0,0,0,2.5,5.2v8.668H5.063Z" fill="#262424"/>
+    <path id="Path_15088" data-name="Path 15088" d="M72.6,72.468a.145.145,0,0,1-.135.135H63.8v2.563h8.668a2.706,2.706,0,0,0,2.7-2.7V63.8H72.6Z" transform="translate(-40.624 -40.624)" fill="#262424"/>
+    <path id="Path_15089" data-name="Path 15089" d="M72.468,2.5H63.8V5.063h8.668A.145.145,0,0,1,72.6,5.2v8.668h2.563V5.2A2.706,2.706,0,0,0,72.468,2.5Z" transform="translate(-40.624)" fill="#262424"/>
+    <path id="Path_15090" data-name="Path 15090" d="M5.063,72.468V63.8H2.5v8.668a2.706,2.706,0,0,0,2.7,2.7h8.668V72.6H5.2C5.1,72.6,5.063,72.57,5.063,72.468Z" transform="translate(0 -40.624)" fill="#262424"/>
+    <path id="Path_15091" data-name="Path 15091" d="M35.206,30.008V28.3h-5.2V23.1H28.3v5.2H23.1v1.71h5.2v5.2h1.71v-5.2Z" transform="translate(-10.632 -10.632)" fill="#262424"/>
+  </g>
+</svg>

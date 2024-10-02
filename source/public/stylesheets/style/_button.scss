@@ -1,0 +1,93 @@
+//
+// booking card form
+// --------------------------------------------------
+
+
+.btn {
+	// border: none;
+	@include transition(0.15s ease-out);
+	border-radius: $border-radius;
+	// font-size: 90%;
+
+	&.round {
+		border-radius: $border-radius-pill;
+	}
+
+	&.prefix {
+		position: relative;
+		padding-left: 42px;
+
+		.fa,
+		.fas,
+		.far,
+		.fal,
+		.fab,
+		.ich {
+			position: absolute;
+			top: 50%;
+			margin-top: -0.5em;
+			left: 1.4em;
+		}
+
+		// [converter] extracted a& to a.btn
+	}
+
+	&.hoverable:hover,
+	&.hoverable:focus,
+	&.hoverable.focus {
+		text-decoration: none;
+		@include z-depth-4;
+	}
+
+	&.btn-minwidth {
+		width: 220px;
+		margin: 0 auto;
+		display: block;
+	}
+	&.btn-min-width {
+		min-width: auto;
+		@include media-breakpoint-up(md){ min-width: 240px; }
+	}
+	&.confirm {
+		min-width: 160px;
+	}
+	&.btn-back {
+		min-width: 100px;
+	}
+	&.dropdown-toggle {
+		@include tab-focus;
+	}
+}
+
+.btn-block {
+	display: block;
+	width: 100%;
+}
+
+// .bootstrap-select {
+// 	> select.mobile-device:focus + .dropdown-toggle,
+// 	.dropdown-toggle {
+// 		@include tab-focus;
+// 		&:focus {
+// 			@include tab-focus;
+// 		}
+// 		&.btn-xs {
+// 			padding-right: $padding-base-horizontal;
+// 		}
+// 	}
+// }
+
+//
+
+// scss-docs-start btn-variant-loops
+@each $color, $value in $theme-colors {
+	.btn-#{$color} {
+		@include button-variant($value, $value);
+	}
+}
+
+@each $color, $value in $theme-colors {
+	.btn-radio-#{$color} {
+		@include button-outline-variant($value);
+	}
+}

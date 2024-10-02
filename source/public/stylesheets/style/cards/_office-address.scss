@@ -1,0 +1,51 @@
+&-office {
+	&-address {
+		// margin: 50px auto;
+		display: block;
+		position: relative;
+		padding-left: 140px;
+		margin-bottom: $font-size-base * 2.5;
+
+		&-img {
+			img {
+				display: block;
+				width: $font-size-base * 5;
+				margin: 0 auto;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				width: $font-size-base * 5;
+				top: $font-size-base * 5;
+				left: 15px;
+				margin-top: -$font-size-base * 2.5;
+			}
+		}
+
+		&-content {
+			border-left: 2px solid $primary;
+			padding-left: $font-size-base * 3;
+			font-size: 90%;
+		}
+
+		a {
+			text-decoration: none;
+			color: #333333;
+
+			&:hover {
+				color: $primary;
+			}
+		}
+
+		.icons {
+			margin-right: 10px;
+		}
+
+		.header {
+			font-size: 140%;
+		}
+
+		&-quote-form{
+			// padding: $font-size-base * 2 0;
+		}
+	}
+}

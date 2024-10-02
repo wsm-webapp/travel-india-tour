@@ -1,0 +1,81 @@
+&-interactive {
+	&-dashboard {
+		position: relative;
+		&-base{
+			margin: $font-size-base * 2 auto;
+			.heading {
+				font-weight: 600;
+				color: $brown-500;
+				margin-bottom: $font-size-base * 3;
+				border-bottom: 1px solid $peach-lightn;
+				padding-bottom: $font-size-base ;
+			}
+		}
+
+		&-list {
+			position: relative;
+			padding: $font-size-base * 2;
+			border-radius: $border-radius*4;
+			// padding-top: $font-size-base * 4;
+			border: 1px solid $peach-lightn;
+			background-color: rgba($peach-lightn, .5);
+			margin: $font-size-base auto;
+
+			// &:after {
+			// 	content: "";
+			// 	position: absolute;
+			// 	width: $font-size-base*1.5;
+			// 	height: $font-size-base*1.5;
+			// 	background-color: $white;
+			// 	border-radius: 50%;
+			// 	z-index: 2;
+			// 	top: $font-size-base * 1.5;
+			// 	left: $font-size-base * 1.5;
+			// }
+
+			.icons {
+				margin-bottom: $font-size-base*1.2;
+				font-size: 160%;
+			}
+
+			.heading {
+				font-weight: 300;
+				color: $brown-500;
+				margin: 0;
+				line-height: 1;
+			}
+
+			.sub-heading {
+				font-size: 360%;
+				font-weight: 700;
+				font-family: $font-family-barlow;
+				letter-spacing: -2px;
+				margin: 0;
+			}
+		}
+
+		&-content {
+			.heading {
+				// font-weight: 800;
+				font-size: 280%;
+			}
+		}
+
+		&-form {
+			.form-control {
+				border-bottom-right-radius: 0;
+				border-top-right-radius: 0;
+			}
+
+			.button {
+				border-bottom-left-radius: 0;
+				border-top-left-radius: 0;
+			}
+		}
+
+		&-header {
+			margin-bottom: $font-size-base*2;
+
+		}
+	}
+}

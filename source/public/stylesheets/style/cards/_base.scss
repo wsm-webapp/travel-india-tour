@@ -1,0 +1,128 @@
+&-base {
+	position: relative;
+	z-index: 3;
+
+	.section-bg {
+		width: 88%;
+		margin: 0 auto;
+	}
+
+	&-content {
+		position: relative;
+
+		.card-content {
+			p {
+				font-size: 130%;
+			}
+		}
+
+		.heading {
+			font-weight: 700;
+			font-size: 290%;
+			border-bottom: 2px solid $peach-lightn;
+			padding-bottom: $font-size-base*1.5;
+			margin-bottom: $font-size-base*3;
+
+			.text {
+				font-size: 70%;
+			}
+		}
+	}
+
+	&-link {
+		margin-top: $font-size-base*3;
+
+		.btn {
+			padding-left: $font-size-base*1.5;
+			padding-right: $font-size-base*1.5;
+		}
+	}
+
+	&-list {
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style: none;
+			margin-bottom: $font-size-base;
+			position: relative;
+			font-size: 140%;
+			padding-left: $font-size-base*2.5;
+
+			&:after {
+				content: "";
+				position: absolute;
+				width: $font-size-base;
+				height: $font-size-base;
+				background-color: $brown-400;
+				z-index: 2;
+				top: $font-size-base*.5;
+				left: 0;
+			}
+		}
+	}
+
+	&-form {
+		.form-control {
+			border-bottom-right-radius: 0;
+			border-top-right-radius: 0;
+		}
+
+		.button {
+			border-bottom-left-radius: 0;
+			border-top-left-radius: 0;
+		}
+	}
+
+	&-header {
+		margin-bottom: $font-size-base*2;
+
+	}
+}
+
+&-headings {
+	position: relative;
+}
+
+&-user {
+	&-dropdown {
+		color: $navbar-light-color;
+		padding: $font-size-base*.95 0;
+		margin-right: $font-size-base*.5;
+	}
+
+	&-item {
+		.image {
+			border-radius: 50%;
+			overflow: hidden;
+			width: $font-size-base*2.6;
+			height: $font-size-base*2.6;
+
+			svg,
+			img,
+			.svg,
+			.img {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.info {
+			margin-left: $font-size-base*.5;
+			margin-right: $font-size-base*.5;
+
+			.name {
+				line-height: 1;
+				font-weight: 700;
+				font-size: 105%;
+			}
+
+			.id {
+				font-size: 80%;
+				line-height: 1;
+			}
+		}
+
+	}
+}

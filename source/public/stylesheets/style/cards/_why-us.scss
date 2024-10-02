@@ -1,0 +1,113 @@
+&-why-us {
+	&-artical {
+
+		// max-width: 60%;
+		.heading {
+			font-weight: 700;
+			margin-bottom: $font-size-base*2.5;
+		}
+
+		.content {
+			font-size: 130%;
+		}
+	}
+
+	&-inner {
+		margin: $font-size-base $font-size-base;
+	}
+
+	
+
+	&-with {
+		&-icon {
+			padding: $font-size-base * 6 0;
+			min-height: 40vh;
+			background-color: cover;
+			position: relative;
+	
+			&:after {
+				content: "";
+				background-color: $blue-darkn;
+				position: absolute;
+				height: 50%;
+				z-index: -2;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+	
+			.heading {
+				font-size: 140%;
+	
+				&-icon {
+					margin-bottom: $font-size-base*1.5;
+				}
+			}
+		}
+		&-pointers {
+			padding: $font-size-base * 6 0;
+			min-height: 40vh;
+			position: relative;
+
+			.heading {
+				font-size: 140%;
+
+				&-icon {
+					margin-bottom: $font-size-base*2;
+				}
+			}
+
+			.large {
+				font-size: 260%;
+				margin-bottom: $font-size-base*2;
+				font-family: $font-family-barlow;
+				font-weight: 700;
+			}
+		}
+
+		&-offerings {
+			.large {
+				font-size: 260%;
+				margin-bottom: $font-size-base*2;
+				font-family: $font-family-barlow;
+				font-weight: 700;
+			}
+		}
+	}
+
+	&-list {
+		border: 1px solid $default-border;
+		padding: $font-size-base*2 $font-size-base*3;
+		border-radius: $border-radius;
+		z-index: 2;
+		background-color: $white;
+		min-height: 230px;
+
+	}
+
+	&-offerings {
+		border-radius: $border-radius;
+		z-index: 2;
+		background-color: rgba($primary, .08);
+		padding: $font-size-base*2 $font-size-base*2;
+		margin-bottom: $font-size-base;
+
+		.heading-icon {
+			margin-bottom: $font-size-base*1.5;
+		}
+	}
+
+	&-pointers {
+		border: 2px solid $default-border;
+		padding: $font-size-base*2 $font-size-base*2;
+		border-radius: $border-radius;
+		z-index: 2;
+		background-color: $white;
+		min-height: 180px;
+		margin: $font-size-base*.3 auto;
+
+		.heading {
+			margin-left: $font-size-base*2;
+		}
+	}
+}

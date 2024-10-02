@@ -1,0 +1,287 @@
+.no-pad {
+  padding: 0px !important;
+}
+
+.max_400 {
+  max-width: 400px;
+}
+
+.max_920 {
+  max-width: 940px;
+  padding: 0 15px;
+}
+
+.max_1100 {
+  max-width: 1120px;
+  padding: 0 15px;
+}
+
+.max_1200 {
+  max-width: 1220px;
+  padding: 0 15px;
+}
+
+.max_1300 {
+  max-width: 1320px;
+  padding: 0 15px;
+}
+
+.border_radius_10 {
+  border-radius: 10px;
+}
+
+.image {
+  &_full {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.gap_10 {
+  height: 10px;
+}
+
+.gap_20 {
+  height: 20px;
+}
+
+.gap_30 {
+  height: 30px;
+}
+
+.gap_40 {
+  height: 40px;
+
+  @media (max-width: 768px) {
+    height: 30px;
+  }
+}
+
+.gap_60 {
+  height: 60px;
+
+  @media (max-width: 768px) {
+    height: 40px;
+  }
+}
+
+.gap_80 {
+  height: 80px;
+
+  @media (max-width: 768px) {
+    height: 50px;
+  }
+}
+
+.gap_100 {
+  height: 100px;
+
+  @media (max-width: 768px) {
+    height: 60px;
+  }
+}
+
+.gap_120 {
+  height: 120px;
+
+  @media (max-width: 768px) {
+    height: 100px;
+  }
+}
+
+.gap_50--mob {
+  @media (max-width: 768px) {
+    height: 50px;
+  }
+}
+
+.gap_20--mob {
+  @media (max-width: 768px) {
+    height: 20px;
+  }
+}
+
+.overflow_hidden {
+  overflow: hidden;
+}
+
+.btn_w200 {
+  min-width: 200px;
+}
+
+.bold {
+  font-weight: 800 !important;
+}
+
+.page-title {
+  margin-bottom: $font-size-base;
+
+  &.with-margin {
+    margin-bottom: $font-size-base * 3;
+  }
+
+  .title {
+    font-size: 125%;
+    margin-bottom: $font-size-base;
+  }
+
+  .sub-title {
+    font-size: 100%;
+    
+    font-weight: 500 !important;
+    margin-bottom: $font-size-base;
+    margin-top: $font-size-base * 1.5;
+  }
+
+  .thankyou-file {
+    margin-top: $font-size-base * 3;
+
+    .text {
+      font-size: 80%;
+      margin-left: $font-size-base * 0.5;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .title {
+      font-size: 200%;
+    }
+
+    .sub-title {
+      font-size: 150%;
+      margin-top: $font-size-base * 2.2;
+    }
+  }
+}
+
+.sec-header {
+  font-size: 100%;
+  font-weight: 600;
+  margin-bottom: $font-size-base * 2;
+  // color: darken($primary, 30%);
+  padding: 0 $font-size-base * 2;
+}
+
+.modal-page-list {
+  padding: 0 $font-size-base * 2;
+
+  .table {
+    margin: $font-size-base auto;
+    border: 1px solid $table-border-color;
+  }
+
+  .header {
+    font-size: 90%;
+    font-weight: 600;
+    margin-bottom: $font-size-base * 0.5;
+    color: darken($primary, 20%);
+  }
+
+  .page-list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: $font-size-base * 2;
+
+    li {
+      list-style: none;
+      padding-left: $font-size-base;
+      position: relative;
+      margin-bottom: $font-size-base * 0.3;
+      font-size: 90%;
+
+      &:after {
+        content: '';
+        width: $font-size-base * 0.3;
+        height: $font-size-base * 0.3;
+        background-color: $gray-900;
+        position: absolute;
+        top: $font-size-base * 0.5;
+        left: 0;
+        border-radius: $border-radius-lg;
+      }
+    }
+
+    ul {
+      margin: $font-size-base auto;
+    }
+  }
+}
+
+.btn-radio-flex,
+.btn-check-flex {
+  display: flex;
+}
+
+.form-group-box {
+  label {
+    font-weight: 600;
+    
+    font-size: 85%;
+    display: block;
+    margin-bottom: $font-size-base * 0.4;
+  }
+
+  position: relative;
+  margin-bottom: $form-group-margin;
+}
+
+.btn-radio-box,
+.btn-check-box {
+  display: block;
+  padding: $font-size-base * 0.4 $font-size-base * 1.5;
+  position: relative;
+  border: 1px solid lighten($primary, 35%);
+  margin-right: $font-size-base * 0.4;
+  border-radius: $border-radius;
+
+  input {
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    @include opacity(0);
+    z-index: 10;
+  }
+
+  &.active {
+    border-color: lighten($primary, 20%);
+    background-color: lighten($primary, 45%);
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    filter: none;
+    border-color: $gray-500;
+    @include opacity(0.5);
+
+    input {
+      pointer-events: none;
+      filter: none;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.no-display {
+  display: none;
+}
+
+.button-margin {
+  margin-top: $font-size-base * 5 !important;
+
+  &-sm {
+    margin-top: $font-size-base * 3 !important;
+  }
+
+  &-xs {
+    margin-top: $font-size-base * 1.5 !important;
+  }
+
+  &-lg {
+    margin-top: $font-size-base * 5 !important;
+  }
+}

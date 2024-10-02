@@ -1,0 +1,29 @@
+&-banner {
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100% !important;
+  background-size: cover;
+}
+
+&-destination,
+&-international,
+&-tour-packages,
+&-privacy-policy {
+  padding: $font-size-base * 4 0;
+}
+
+&-packages-horizontal {
+  padding: $font-size-base * 2 0;
+}
+
+&-contact { 
+  padding: $font-size-base * 3 0;
+}
+&-rent-car { 
+  padding: $font-size-base * 3 0;
+  border-bottom: 1px solid $border-color; 
+}
+&-rent-affordable { 
+  padding: $font-size-base * 3 0;
+  border-bottom: 1px solid $border-color; 
+}

@@ -1,0 +1,14 @@
+&-interactive {
+  &-dashboard {
+    
+    min-height: 40vh;
+    position: relative;
+    z-index: 3;
+    padding: $font-size-base * 4 0;
+    // @include media-breakpoint-up(sm) { min-height: 40vh;   padding: $font-size-base * 3 0; .page-bg { width: 45%;background-color: lighten($primary, 40%);}}
+    // @include media-breakpoint-up(md) { min-height: 40vh;   padding: $font-size-base * 3 0; .page-bg { width: 45%;background-color: lighten($primary, 40%);}}
+    // @include media-breakpoint-up(lg) { min-height: 40vh;  padding: $font-size-base * 3 0; .page-bg { width: 45%;background-color: lighten($primary, 40%);}}
+    // @include media-breakpoint-up(xl) { min-height: 40vh;  padding: $font-size-base * 3 0; .page-bg { width: 45%;background-color: lighten($primary, 40%);}}
+    // @include media-breakpoint-up(xxl){ min-height: 40vh;  padding: $font-size-base * 3 0; .page-bg { width: 45%;background-color: lighten($primary, 40%);}}
+  }
+}

@@ -1,0 +1,23 @@
+&-success-stories {
+    position: relative;
+    min-height: 50vh;
+    display: block;
+    padding: $font-size-base * 4 0;
+    z-index: 20;
+    &:after{
+      content: "";
+      background-color: $blue-darkn;
+      position: absolute;
+      height: 50%;
+      z-index: -2;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    
+    @include media-breakpoint-up(sm) { min-height: 50vh;  padding: $font-size-base * 4 0;}
+    @include media-breakpoint-up(md) { min-height: 50vh;  padding: $font-size-base * 4 0;}
+    @include media-breakpoint-up(lg) { min-height: 50vh;  padding: $font-size-base * 4 0;}
+    @include media-breakpoint-up(xl) { min-height: 50vh;  padding: $font-size-base * 4 0;}
+    @include media-breakpoint-up(xxl){ min-height: 50vh;  padding: $font-size-base * 4 0;}
+  }

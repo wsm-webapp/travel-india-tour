@@ -1,0 +1,26 @@
+&-login {
+	padding: $font-size-base * 2 0;
+	background-color: $blue-dark;
+	min-height: 100vh;
+	&-inner{
+		max-width: 830px;
+	}
+
+	&-header {
+		.page-svg{
+			width: 180px;
+		}
+		
+		.header {
+			
+			&-link {
+
+				color: $white;
+
+				.text-link {
+					margin-left: $font-size-base ;
+				}
+			}
+		}
+	}
+}

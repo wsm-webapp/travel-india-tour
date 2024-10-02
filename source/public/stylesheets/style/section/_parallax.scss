@@ -1,0 +1,143 @@
+&-parallax {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-position: bottom center;
+
+  &-detail {
+    margin-top: $navbar-brand-height*2.7;
+    border-radius: $border-radius*5;
+    overflow: hidden;
+    background-color: $primary;
+    max-height: 320px;
+    position: relative;
+  }
+
+ 
+
+  &-heading{
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 1;
+    @include gradient-y-three-colors($start-color: rgba($black, 0), $mid-color: rgba($gray-800, .9), $color-stop: 60%, $end-color: rgba($gray-800, .9));
+    padding: $font-size-base*1.5 $font-size-base*1.5;
+    padding-top: $font-size-base*2;
+  }
+
+  &-thumbnail {
+    display: block;
+    width: 100%;
+    img,.svg{
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: rgba($blue-dark, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  &-title {
+    position: relative;
+    z-index: $zindex-fixed * 0.3;
+    padding: $font-size-base * 2 0;
+    padding-top: $font-size-base * 6;
+    font-size: $font-size-base * 1.8;
+    font-weight: 700;
+
+    
+    @include media-breakpoint-up(sm) {
+      padding: $font-size-base * 6 0;
+      padding-top: $font-size-base * 10;
+    }
+  
+    @include media-breakpoint-up(md) {
+      padding: $font-size-base *6 0;
+      padding-top: $font-size-base * 10;
+    }
+  
+    @include media-breakpoint-up(lg) {
+      padding: $font-size-base * 6 0;
+      padding-top: $font-size-base * 10;
+    }
+  
+    @include media-breakpoint-up(xl) {
+      padding: $font-size-base * 6 0;
+      padding-top: $font-size-base * 10;
+    }
+  }
+
+  &-search {
+    // margin-top: $navbar-brand-height*2.7;
+    overflow: hidden;
+    background-color: $primary;
+    max-height: 220px;
+    position: relative;
+  }
+  &-infopage {
+    // margin-top: $navbar-brand-height*2.7;
+    overflow: hidden;
+    background-color: $primary;
+    // max-height: 220px;
+    position: relative;
+  }
+  
+
+  &-title-mini {
+    position: relative;
+    z-index: $zindex-fixed * 0.3;
+    padding: $font-size-base * 2 0;
+    padding-top: $font-size-base * 6;
+    font-size: $font-size-base * 1.8;
+    font-weight: 700;
+
+    
+    @include media-breakpoint-up(sm) {
+      padding: $font-size-base * 3 0;
+      padding-top: $font-size-base * 6;
+    }
+  
+    @include media-breakpoint-up(md) {
+      padding: $font-size-base *6 0;
+      padding-top: $font-size-base * 10;
+    }
+  
+    @include media-breakpoint-up(lg) {
+      padding: $font-size-base * 6 0;
+      padding-top: $font-size-base * 10;
+    }
+  
+    @include media-breakpoint-up(xl) {
+      padding: $font-size-base * 3 0;
+      padding-top: $font-size-base * 6;
+    }
+  }
+}
+
+
+
+.swiper-parallax {
+  // width: 100%;
+  // height: 100%;
+  // margin: 0 auto;
+  background-size: cover;
+  // background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-height: 600px !important;
+  overflow: hidden;
+}

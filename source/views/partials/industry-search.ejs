@@ -1,0 +1,153 @@
+<section class="section-search">
+    <div class="section-search-artical">
+        <div class="container">
+            <div class="card-search-outer">
+                <div class="card-search-panel">
+                    <form action="">
+                        <div class="card-search-panel-header">
+                            <div class="row">
+                                <div class="col-sm-6"></div>
+                                <div class="col-sm-6"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control floating-label" id="CIN"
+                                                    placeholder="Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control floating-label" id="Organisation"
+                                                    placeholder="Organisation">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col col-xs-6">
+                                            <div class="form-group">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Profession</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col col-xs-6">
+                                            <div class="form-group">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Industry</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col col-xs-6">
+                                            <button class="btn btn-primary button btn-block">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-search-body">
+                            <div class="card-search-panel-table">
+                                <table id="industryTable" class="table table-striped table-symbols" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th class="with-icon center" data-dt-order="disable"><input
+                                                    class="form-check-input" type="checkbox" id="checkAll" /></th>
+                                            <th class="with-icon">Customer&nbsp;Id</th>
+                                            <th class="with-icon" width="12%">Company Name</th>
+                                            <th class="with-icon">State</th>
+                                            <th class="with-icon">City</th>
+                                            <th class="with-icon">Pincode</th>
+                                            <th class="with-icon">Date of Incorporation</th>
+                                            <th class="with-icon">Industry</th>
+                                            <th class="with-icon">Segment</th>
+                                            <th class="with-icon right" width="15%" data-dt-order="disable">Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% for(var j=0; j < 20; j++) { %>
+                                            <tr>
+                                                <td class="center"><input class="form-check-input" type="checkbox"
+                                                        name="check<%= j*3 %>" value="<%= j*3 %>"></td>
+                                                <td>U052200UP2024TTC197263</td>
+                                                <td>Halloforge tech Pvt LTD</td>
+                                                <td>Haryana</td>
+                                                <td>Faridabad</td>
+                                                <td>121003</td>
+                                                <td>1<%= j*3 %> Feb, 2024</td>
+                                                <td>IT</td>
+                                                <td>Software</td>
+                                                <td class="right-text">
+                                                    <div class="user-info-card">
+                                                        <div class="name">Arun Kumar Gupta</div>
+                                                        <div class="user-info-card-data">
+                                                            <ul class="user-info-card-list">
+                                                                <li><a href="" class="btn btn-borderd-primary btn-links"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        data-bs-title="Phone"><i
+                                                                            class="fa fa-phone"></i></a> </li>
+                                                                <li><a href="" class="btn btn-borderd-primary btn-links"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        data-bs-title="Email Id"><i
+                                                                            class="fa fa-envelope"></i></a></li>
+                                                                <li><a href="" class="btn btn-borderd-success btn-links"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        data-bs-title="saved list"><i
+                                                                            class="fa fa-tag"></i></a></li>
+                                                                <li><a href="" class="btn btn-borderd-primary btn-links"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        data-bs-title="add to list"><i
+                                                                            class="fa fa-heart"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="button-list">
+                                                            <button type="button"
+                                                                class="btn btn-primary button btn-block"
+                                                                data-bs-toggle="modal" data-bs-target="#industrySearch"
+                                                                data-bs-whatever="@getbootstrap"><span
+                                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                    data-bs-title="travel-india-tour Community Member"
+                                                                    class="d-flex align-items-center justify-content-center">
+                                                                    Connect Details <i
+                                                                        class="fa-solid fa-crown prime text-orange"></i></span></button>
+                                                            <div class="credit">2 credit is left</div>
+                                                        </div>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <% } %>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script rel="preload" as="script" type="text/javascript">
+    $(document).ready(function () {
+        var industryTable = new DataTable('#industryTable', {
+            order: [[1, 'asc']],
+            bFilter: false,
+            bLengthChange: false,
+            // bInfo: false,
+        });
+
+        $('#checkAll').click(function (e) {
+            $('#industryTable tbody :checkbox').prop('checked', $(this).is(':checked'));
+            e.stopImmediatePropagation();
+        });
+    });
+</script>

@@ -1,0 +1,198 @@
+&-icons-list {
+	display: flex;
+	align-items: center;
+	@include text-social();
+
+	&:last-child {
+		margin-right: 0;
+		.title-date {
+			margin-right: 0;
+		}
+	}
+
+	&.with-img {
+		margin-right: $font-size-base * 1.5;
+		svg {
+			path {
+				@include fill-social();
+			}
+			@include fill-social();
+		}
+		&:hover,
+		&.active {
+			color: $primary;
+			svg {
+				path {
+					fill: $primary;
+				}
+				fill: $primary;
+			}
+		}
+	}
+	&.with-margin {
+		// margin-top: $font-size-base * 5;
+	}
+	.title-icons {
+		width: $font-size-base * 2.3;
+		img {
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.image-ico {
+		display: flex;
+		width: $font-size-base * 2;
+		margin-right: $font-size-base * 0.5;
+		img {
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+		&.mini {
+			width: $font-size-base * 1.15;
+		}
+		&.with {
+			&-icons {
+				// margin: 0;
+				width: auto;
+				.icons {
+					font-size: $font-size-base * 0.4;
+					padding-top: $font-size-base * 0.1;
+				}
+			}
+			&-images {
+				// margin: 0;
+				width: $font-size-base * 1.9;
+				margin-right: $font-size-base * 0.5;
+				img {
+					display: block;
+					width: 100%;
+				}
+			}
+		}
+		.icons {
+			font-size: $font-size-base * 0.5;
+		}
+	}
+
+	&.only-fa {
+		font-size: $font-size-base * 1.5;
+		padding: 0 $font-size-base * 0.6;
+	}
+
+	.text {
+		@include text-social();
+		margin-right: $font-size-base;
+		&.with-date {
+			@include text-social();
+			font-family: $font-family-heebo;
+		}
+	}
+
+	.title {
+		font-size: $font-size-base * 2;
+		font-weight: 600;
+	}
+
+	.hero-title {
+		font-size: $font-size-base * 2;
+		font-weight: 600;
+		line-height: 0.5;
+	}
+
+	.title-text {
+		font-size: $font-size-base * 1.2;
+		// line-height: 1.2;
+		font-weight: 600;
+	}
+
+	.heading {
+		font-size: $font-size-base * 1.55;
+		font-weight: 800;
+	}
+
+	.sub-title {
+		font-size: $font-size-base * 1.5;
+	}
+
+	.title-content {
+		font-size: $font-size-base * 0.9;
+	}
+
+	.mini-title {
+		font-size: $font-size-base * 0.9;
+		@include text-social();
+	}
+
+	.title-email {
+		font-size: $font-size-base * 0.9;
+		font-family: $font-family-heebo;
+		@include text-social();
+	}
+
+	.title-date {
+		font-size: $font-size-base * 0.9;
+		font-family: $font-family-heebo;
+		@include text-social();
+		margin-right: $font-size-base * 0.9;
+		.image {
+			display: flex;
+			width: $font-size-base * 1.5;
+			height: $font-size-base * 1.5;
+			margin: 0;
+		}
+	}
+
+	.title-upload {
+		font-size: $font-size-base * 1.2;
+		font-family: $font-family-heebo;
+		@include text-social();
+		margin-right: $font-size-base * 3;
+		.icons {
+			margin-right: $font-size-base * 0.5;
+		}
+		.image {
+			display: flex;
+			width: $font-size-base * 1.5;
+			height: $font-size-base * 1.5;
+			// margin: 0;
+		} 
+		&.with-input {
+			position: relative;
+			cursor: pointer;
+			.files {
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				z-index: 10;
+				@include opacity(0);
+				cursor: pointer;
+			}
+		}
+	}
+
+	&.only-icon {
+		padding: $font-size-base * 0.85 $font-size-base * 0.7;
+		// margin-right: $font-size-base * 0.2;
+		.image {
+			display: flex;
+			width: $font-size-base * 1.5;
+			height: $font-size-base * 1.5;
+			margin: 0;
+		}
+	}
+	&.files-card {
+		cursor: pointer;
+	}
+}
+
+.resend-btn {
+	cursor: pointer;
+	&.disable {
+		pointer-events:none;
+		@include opacity(.6);
+	}
+}

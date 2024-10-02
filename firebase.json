@@ -1,0 +1,20 @@
+{
+  "database": {
+    "rules": "n"
+  },
+  "hosting": {
+    "site": "travel-india-tour",
+    "public": "travel-india-tour",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
